@@ -1,6 +1,6 @@
 package Course1_1;
 
-public class Course1_1 {
+public class Course1_1_Conversions {
     public static void main(String[] args) {
         stringComparingIssue();
         System.out.println("\n---------------------------------------------\n");
@@ -9,6 +9,11 @@ public class Course1_1 {
         //The following is very important
         convertingNumbersToStrings();
         System.out.println("\n---------------------------------------------\n");
+        baseSixtyFour();
+    }
+
+    private static void baseSixtyFour() {
+
     }
 
     public static void stringComparingIssue(){
@@ -109,18 +114,30 @@ public class Course1_1 {
         //The right way of doing this
         StringBuilder sb=new StringBuilder();
         for(int i=0;i<hash.length;i++){
+            if(Integer.toHexString(Byte.toUnsignedInt(hash[i])).length()==1){
+                sb.append("0");
+            }
             sb.append(Integer.toHexString(Byte.toUnsignedInt(hash[i])));
             if(i!=hash.length-1){
                 sb.append("-");
             }
         }
         System.out.println(sb.toString().toUpperCase());
+        System.out.println(getHexStringFromByteArray(hash));
 
         //Convert from string to numbers
         Integer initialValue=Integer.parseInt(stringHex,16);
         System.out.println("\nInitial Value: "+initialValue);
         initialValue=Integer.parseInt(stringBin,2);
         System.out.println("\nInitial Value: "+initialValue);
+    }
+
+    private static String getHexStringFromByteArray(byte[] values){
+        StringBuilder sb=new StringBuilder();
+        for(byte value:values){
+            sb.append(String.format("%02x",value));
+        }
+        return sb.toString().toUpperCase();
     }
 
 }
