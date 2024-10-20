@@ -135,9 +135,9 @@ public class Conversions1 {
     private static String getHexStringFromByteArray(byte[] values){
         StringBuilder sb=new StringBuilder();
         for(byte value:values){
-            sb.append(String.format("%02x",value));
+            sb.append(String.format(" %02X",value));
         }
-        return sb.toString().toUpperCase();
+        return sb.toString();
     }
 
 }
