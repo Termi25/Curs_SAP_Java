@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Curs1_1_SAP.iml" filepath="$PROJECT_DIR$/Curs1_1_SAP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Curs_SAP_Java.iml" filepath="$PROJECT_DIR$/Curs_SAP_Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/course/course.iml" filepath="$PROJECT_DIR$/course/course.iml" />
     </modules>
   </component>

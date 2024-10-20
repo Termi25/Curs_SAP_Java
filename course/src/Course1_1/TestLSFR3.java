@@ -1,6 +1,6 @@
 package Course1_1;
 
-public class TestLSFR {
+public class TestLSFR3 {
 
     //implement a simple LSFR with 32 bit register and
     //TAP sequence x^31 + x^7 + x^5 + x^3 + x^2 + x + 1;

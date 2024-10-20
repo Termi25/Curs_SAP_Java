@@ -1,6 +1,6 @@
 package Course1_1;
 
-public class Course1_1_BitwiseOperations {
+public class BitwiseOperations2 {
     public static void main(String[] args) {
         //Initialising binary and hexadecimal values
         byte value=15;

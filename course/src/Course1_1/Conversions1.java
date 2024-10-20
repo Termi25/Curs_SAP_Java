@@ -1,6 +1,6 @@
 package Course1_1;
 
-public class Course1_1_Conversions {
+public class Conversions1 {
     public static void main(String[] args) {
         stringComparingIssue();
         System.out.println("\n---------------------------------------------\n");
