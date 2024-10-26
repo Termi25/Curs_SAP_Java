@@ -8,11 +8,11 @@ import java.security.NoSuchAlgorithmException;
 
 public class MAC_HMAC1 {
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
-        byte[] hmac=getHMAC("Message_C21_1.txt","HmacSHA1","ism1234");
+        byte[] hmac=getHMAC("Message_C21_13456.txt","HmacSHA1","ism1234");
         System.out.println("HMAC result: "+Utility.getHex(hmac));
 
         //password changed
-        byte[] hmac2=getHMAC("Message_C21_1.txt","HmacSHA1","ism12345");
+        byte[] hmac2=getHMAC("Message_C21_13456.txt","HmacSHA1","ism12345");
         System.out.println("HMAC result: "+Utility.getHex(hmac2));
     }
 

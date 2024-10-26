@@ -9,9 +9,9 @@ import java.io.*;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
-public class ECB_AES_Or_DES3 {
+public class ECB_AES3 {
     public static void main(String[] args) throws NoSuchPaddingException, IllegalBlockSizeException, IOException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException {
-        encrypt("Message_C21_13.txt","Message_C21_3.enc", "ism12345password".getBytes(),"AES");
+        encrypt("Message_C21_13456.txt","Message_C21_3.enc", "ism12345password".getBytes(),"AES");
         System.out.println("Encryption finalized.");
 
         decrypt("Message_C21_3.enc","Message_C21_3.txt", "ism12345password".getBytes(),"AES");
@@ -92,7 +92,7 @@ public class ECB_AES_Or_DES3 {
                 break;
             }
 
-            byte[] output=cipher.update(buffer);
+            byte[] output=cipher.update(buffer,0,noBytes);
             fos.write(output);
         }
         byte[] output=cipher.doFinal();
