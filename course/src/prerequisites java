@@ -29,6 +29,7 @@ Schedule 19th and 20th of October 2024:
             2. MAC & HMAC
             3. PBKDF
             4. Symmetric Encryption (Block Ciphers - modes: ECB & CBC & CTR)
+            5. Symmetric Stream Cypher - OTP
             5. TRNG vs PRNG & generating random keys
             6. Asymmetric Encryption (LSA & ECC)
             7. Digital Signature
