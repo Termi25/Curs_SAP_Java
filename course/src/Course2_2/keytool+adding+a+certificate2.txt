@@ -1,0 +1,1 @@
+keytool -importcert -file ism.ase.ro.crt -storepass passks -keystore ismkeystore.ks -alias "ismasero"
